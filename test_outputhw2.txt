@@ -1,0 +1,161 @@
+insert ACGT
+ACGT is inserted in level 0!
+insert ACGCA
+ACGCA is inserted in level 4!
+display
+I
+.I
+..E
+..I
+...E
+...E
+...I
+....E
+....[ACGCA]
+....E
+....[ACGT]
+....E
+...E
+...E
+..E
+..E
+..E
+.E
+.E
+.E
+.E
+insert CACGA
+CACGA is inserted in level 1!
+insert GCACGA
+GCACGA is inserted in level 1!
+insert CGACGA
+CGACGA is inserted in level 2!
+display
+I
+.I
+..E
+..I
+...E
+...E
+...I
+....E
+....[ACGCA]
+....E
+....[ACGT]
+....E
+...E
+...E
+..E
+..E
+..E
+.I
+..[CACGA]
+..E
+..[CGACGA]
+..E
+..E
+.[GCACGA]
+.E
+.E
+insert TCTACGA
+TCTACGA is inserted in level 1!
+insert GCA
+GCA is inserted in level 4!
+display
+I
+.I
+..E
+..I
+...E
+...E
+...I
+....E
+....[ACGCA]
+....E
+....[ACGT]
+....E
+...E
+...E
+..E
+..E
+..E
+.I
+..[CACGA]
+..E
+..[CGACGA]
+..E
+..E
+.I
+..E
+..I
+...I
+....E
+....[GCACGA]
+....E
+....E
+....[GCA]
+...E
+...E
+...E
+...E
+..E
+..E
+..E
+.[TCTACGA]
+.E
+remove GCACGA
+GCACGA is removed!
+remove GCTCGGA
+GCTCGGA is not in the tree.
+display-lengths
+I
+.I
+..E
+..I
+...E
+...E
+...I
+....E
+....[ACGCA] 5
+....E
+....[ACGT] 4
+....E
+...E
+...E
+..E
+..E
+..E
+.I
+..[CACGA] 5
+..E
+..[CGACGA] 6
+..E
+..E
+.[GCA] 3
+.[TCTACGA] 7
+.E
+search AC
+start with AC:
+ACGCA
+ACGT
+Visited Node:13
+search ACG$
+ACG is not found.
+Visited Node:5
+search CGACGA$
+CGACGA is found.
+Visited Node:3
+remove ACGCA
+ACGCA is removed!
+display-lengths
+I
+.[ACGT] 4
+.I
+..[CACGA] 5
+..E
+..[CGACGA] 6
+..E
+..E
+.[GCA] 3
+.[TCTACGA] 7
+.E
